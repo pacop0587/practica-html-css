@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Practica CSS</title>
+</head>
+<body>
+    <header>
+        <h1>Indice de temario</h1>
+        <ul>
+            <li><a href="index.html#selectores-avanzados">Selectores avanzados</a></li>
+            <li><a href="index.html#pseudoclases">Pseudoclases</a></li>
+            <li><a href="index.html#pseudoelementos">Pseudoelementos</a></li>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+        </ul>
+    </header>
+    <!-- Start Selectores avanzados -->
+    <article id="selectores-avazandos">
+        <h2>Selectores avanzados</h2>
+        <section id="section01">
+            <h2>Titulo del section</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, dignissimos ea et libero numquam error dolor aspernatur commodi porro eos. Veritatis repellendus fugiat explicabo nisi itaque ex ipsam aut maiores.</p>
+            <h3>Subtitulo de la seccion</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt maxime, unde voluptates nulla ratione veritatis a, veniam ea odio quod iste expedita labore molestiae blanditiis dolor sed hic quae cupiditate.</p>
+        </section>
+        <h2>Selectores hijos</h2>
+        <h3>Selectores hijos directos</h3>
+        
+        <ul class="hijos-directos">
+            <li><b>Primavera</b></li>
+            <li><b>Verano</b></li>
+            <li><b>Otoño</b></li>
+            <li><b>Invierno</b></li>
+        </ul>
+        <h3>Selectores hijos descendientes</h3>
+        <ul class="hijos-descendientes">
+            <li><b>Primavera</b></li>
+            <li><b>Verano</b></li>
+            <li><b>Otoño</b></li>
+            <li><b>Invierno</b></li>
+        </ul>
+        <hr>
+        <h3>Selectores hermanos</h3>
+        <h4>Selector hermanos (general)</h4>
+        <ul>
+            <li class="hermanos-general"><b>Primavera</b></li>
+            <li><b>Verano</b></li>
+            <li><b>Otoño</b></li>
+            <li><b>Invierno</b></li>
+        </ul>
+        <h4>Selector hermanos (adyacente)</h4>
+    
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique nulla officiis animi vero. Quos, adipisci eum magnam nostrum perspiciatis praesentium tempora esse hic, at explicabo labore eligendi animi, quasi officia.</p>
+
+        <p class="hermano-adyacente">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam minima maxime consequuntur consequatur iste. Obcaecati fugit modi amet ipsa repellendus velit omnis quasi sunt, laborum doloremque dolorem! Ea, voluptates odio!</p>
+        
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum, placeat sequi! Voluptas est iste quis vitae quia architecto culpa eligendi facilis laudantium? Vel repellendus, laudantium saepe corrupti ullam deserunt excepturi.</p>
+        <hr>
+        <h3>Selectores de atributos</h3>
+        <nav>
+            <ul class="selectores-atributos">
+                <li><a href="https://jonmircha.com" target="_blank">Inicio</a></li>
+                <li><a href="https://jonmircha.com/cursos" target="_blank">Cursos</a></li>
+                <li><a href="https://jonmircha.com/blog" target="_blank">Blog</a></li>
+                <li><a href="http://jonmircha.com/cv" target="_blank">CV</a></li>
+                <li><a href="https://jonmircha.com/ahora" target="_blank">Ahora</a></li>
+                <li><a href="http://jonmircha.com/notas" target="_blank">Notas</a></li>
+                <li><a href="https://facebook.com" >Otros</a></li>
+            </ul>
+        </nav>
+    </article>
+    <!-- End Selectores avanzados -->
+    <hr>
+    <!-- Start Pseudoclases -->
+    <article id="pseudoclases">
+        <h2>Pseudoclases</h3>
+        <form class="form-pseudoclases">
+            <input type="text" name="nombre" placeholder="Escribe tu nombre" required>
+            <br>
+            <input type="email" name="correo" placeholder="Escribe tu correo" required>
+            <input type="submit">
+        </form>
+        <nav class="menu-pseudoclases">
+            <a href="https://facebook.com" target="_blank">Link 1</a>
+            <a href="index.html#section01">Section 01</a>
+            <a href="https://jonmircha.com/ahora">Link 3</a>
+        </nav>
+        <hr>
+        <h2>Pseudoclases por posicion y tipo</h2>
+        <ol class="list-pseudoclases">
+            <li>Mu - Aries</li>
+            <li>Aldebaran - Tauro</li>
+            <li>Saga - Geminis</li>
+            <li>Death Mask - Cancer</li>
+            <li>Aioria - Leo</li>
+            <li>Shaka - Virgo</li>
+            <li>Dohko - Libra</li>
+            <li>Milo - Escorpion</li>
+            <li>Aiorios - Sagitario</li>
+            <li>Shura - Capricornio</li>
+            <li>Camus - Acuario</li>
+            <li>Afrodita - Piscis</li>
+        </ol>
+        <article class="article-pseudoclases">
+            <header>Esto es un header</header>
+            <p>Esto es un p</p>
+            <div>Esto es un div</div>
+            <p>Esto es un p</p>
+            <div>Esto es un div</div>
+            <p class="parrafo01">Esto es un p</p>
+            <div>Esto es un div</div>
+            <p>Esto es un p</p>
+            <div>Esto es un div</div>
+            <p>Esto es un p</p>
+            <div>Esto es un div</div>
+            <p>Esto es un p</p>
+            <div>Esto es un div</div>
+            <footer>Esto es un footer</footer>
+        </article>
+    </article>
+    <!-- End Pseudoclases -->
+    <!-- Start Pseudoelementos -->
+    <article id="pseudoelementos">
+        <h2>Pseudoelementos</h2>
+        <p>
+            <i>Bandai MythCloth</i> <span class="saga-geminis">Saga de Geminis</span> <span class="saga-precio">500</span>
+        </p>
+        <p class="p-pseudoelementos">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam qui necessitatibus architecto quod perspiciatis expedita reprehenderit commodi possimus, facilis, fuga inventore sed veniam doloribus alias asperiores cum corrupti ab excepturi. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore optio quasi iure atque ex! Facere natus voluptate, totam quaerat id expedita voluptatem, reiciendis eum pariatur deserunt beatae dolor at obcaecati?</p>
+    </article>
+    <!-- End Pseudoelementos -->
+</body>
+</html>

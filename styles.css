@@ -1,0 +1,177 @@
+/* Selectores avanzados */
+
+/* Para aplicar estilos a hijos directos se debe usar > */
+.hijos-directos > li{
+    background-color: aqua;
+}
+
+/* Para aplicar estilos a hijos descendientes se debe usar un espacio entre elemento padre e hijos */
+
+.hijos-descendientes b{
+    background-color: aqua;
+}
+
+/* Los selectores de hermanos general aplica estilos a los elementos que esten en el mismo nivel y lo aplica a los elementos siguientes del elemento asignado */
+.hermanos-general~li{
+    background-color: peru;
+}
+
+/* Los selectores de hermano adyacente agregan estilo al hermano que esta por debajo del elemento asignado */
+.hermano-adyacente + p{
+    background-color: yellowgreen;
+}
+
+/* Los selectores de atributos aplican estilos a los elementos que cumplan con los selectores */
+
+.selectores-atributos a[href]{
+    color: coral;
+}
+
+.selectores-atributos a[target="_blank"]{
+    font-weight: bold;
+}
+
+/* El * sirve para aplicar los estilos si contiene la palabra en cuestion en cualquier parte */
+.selectores-atributos a[href*="jonmircha"]{
+    font-size: 24px;
+}
+
+/* El ^ sirve para aplicar estilos si contiene la palabra al inicio del valor del atributo */
+.selectores-atributos a[href^="http:"]{
+    text-decoration: none;
+}
+
+/* El $ sirve para aplicar estilos si contiene la palabra al final del valor del atributo */
+.selectores-atributos a[href$=".com"]{
+    color: red;
+}
+
+/* Las pseudoclases dan estilos dependiendo del contexto, posicion o estado del elemento */
+
+/* Cambia los estilos para los que tengan la propiedad required */
+.form-pseudoclases *:required{
+    border-color: red;
+}
+
+/* Aplica los estilos en cuanto cambia el estado a valid */
+.form-pseudoclases *:valid{
+    border-color: green;
+}
+
+/* Cuando el elemento tenga el foco de la pagina o este seleccionado */
+.form-pseudoclases *:focus{
+    background-color: skyblue;
+}
+
+/* Cuando el elemento link es visitado se activa el estilo */
+.menu-pseudoclases a:visited{
+    color: red;
+}  
+
+/* Se activa los estilos al pasar el mouse sobre el elemento */
+.menu-pseudoclases a:hover{
+   color: yellow;
+}
+
+/* Se activa los estilos cuando se pasa el target al elemento */
+#section01:target{
+    background-color: yellowgreen;
+}
+
+/* Pseudoclases por posicion y tipo */
+
+/* Se aplica estilo al primer elemento */
+.list-pseudoclases li:first-child{
+    color: cornflowerblue;
+}
+
+/* Se aplica estilos al ultimo elemento */
+.list-pseudoclases li:last-child{
+    color: pink;
+}
+
+/* Se aplica los estilos a cada dos elementos de la lista */
+.list-pseudoclases li:nth-child(2n){
+    font-weight: bold;
+}
+
+/* Se aplica estilo a cada posicion 3 + 1  */
+.list-pseudoclases li:nth-child(3n+1){
+    color: steelblue;
+}
+
+/* Se aplica estilos a los elementos pares */
+.list-pseudoclases li:nth-child(even){
+    background-color: orange;
+}
+
+/* Se aplica estilos a los elementos impares */
+.list-pseudoclases li:nth-child(odd){
+    background-color: greenyellow;
+}
+
+/* Se aplica estilos al primero de su tipo de elemento */
+
+/* Se aplica estilos al primero del tipo parrafo */
+.article-pseudoclases p:first-of-type{
+    color: brown;
+    font-weight: bold;
+}
+
+/* Se aplica al ultimo de tipo parrafo */
+.article-pseudoclases p:last-of-type{
+    color: pink;
+    font-size: 18px;
+}
+
+/* Se aplica al segundo o dependiendo el numero de tipo parrafo */
+.article-pseudoclases p:nth-last-of-type(2){
+    color: steelblue;
+}
+
+/* Se aplica estilos con excepcion del elemento dentro del not() */
+.article-pseudoclases *:not(.parrafo01){
+    background-color: bisque;
+}
+
+.article-pseudoclases .parrafo01{
+    font-weight: bold;
+    color: blue;
+}
+
+/* Pseudoelementos */
+
+/* Los pseudoelementos before y after agregan elementos con antes y despues de la clase que le indiquemos a traves de la propiedad content, tambien se pueden agregar estilos a esos elementos */
+.saga-geminis::before{
+    content: "🤦‍♂️";
+}
+
+.saga-geminis::after{
+    content:"♊"
+}
+
+.saga-precio::before{
+    content: "$";
+    font-weight: bold;
+}
+
+.saga-precio::after{
+    content:"USD";
+    font-weight: bold;
+}
+
+/* Los pseudoelementos first-letter y first-line cambian los estilos de la primera letra y de la primera linea de los parrafos */
+
+.p-pseudoelementos::first-letter{
+    font-weight: bold;
+    font-size: 32px;
+}
+
+.p-pseudoelementos::first-line{
+    background-color: steelblue;
+}
+
+/* selection cambia los estilos cuando estemos seleccionado elementos */
+.p-pseudoelementos::selection{
+    background-color: cadetblue;
+}
