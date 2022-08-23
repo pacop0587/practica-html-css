@@ -175,3 +175,12 @@
 .p-pseudoelementos::selection{
     background-color: cadetblue;
 }
+
+/* Cascada CSS */
+/* La cascada es un mecanismo en que el navegador aplica los estilos. Y toma en cuenta lo siguiente en este orden:
+1) Origen del codigo:
+    -El user agent (estilos por defecto del navegador)
+    -Personalizaciones del usuario (temas del navegador, zoom)
+    -Los estilos del autor (estilos propios aplicados con CSS)
+2) La especificidad del selector
+3) Orden de aparicion  */
